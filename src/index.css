@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@layer base {
+  html {
+    font-family: "Lexend", system-ui, sans-serif;
+  }
+}
 .css-15befwp-MuiRating-root {
   font-size: 16px !important;
+}
+.MuiSlider-colorPrimary {
+  color: #088269 !important;
+  height: 6px !important;
+}
+
+.MuiSlider-rail {
+  color: #8a8888;
+}
+.MuiSlider-thumbSizeMedium {
+  background-color: #fff !important;
+  border: 3px solid;
+}
+
+.MuiCheckbox-root {
+  color: #088269 !important;
+}
+.css-1hskriy {
+  width: 100% !important;
 }

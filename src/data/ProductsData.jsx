@@ -9,6 +9,7 @@ export const ProductsData = [
     price: 12,
     img: img1,
     imgs: [img1, img2, img3],
+    category: "BUNDLES",
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ export const ProductsData = [
     rating: "5",
     price: 10,
     img: img1,
+    category: "HERBS",
     imgs: [img1, img2, img3],
   },
   {
@@ -25,6 +27,7 @@ export const ProductsData = [
     rating: "4",
     price: 13,
     img: img1,
+    category: "VEGETABLES",
     imgs: [img1, img2, img3],
   },
   {
@@ -33,6 +36,7 @@ export const ProductsData = [
     rating: "5",
     price: 15,
     img: img2,
+    category: "FRUITS",
     imgs: [img1, img2, img3],
   },
   {
@@ -42,6 +46,7 @@ export const ProductsData = [
     rating: "5",
     price: 13,
     img: img3,
+    category: "SUPPLIES",
     imgs: [img1, img2, img3],
   },
   {
@@ -50,6 +55,7 @@ export const ProductsData = [
     rating: "4",
     price: 11,
     img: img1,
+    category: "FLOWERS",
     imgs: [img1, img2, img3],
   },
   {
@@ -58,6 +64,7 @@ export const ProductsData = [
     rating: "5",
     price: 9,
     img: img3,
+    category: "VEGETABLES",
     imgs: [img1, img2, img3],
   },
   {
@@ -67,6 +74,7 @@ export const ProductsData = [
     rating: "5",
     price: 10,
     img: img2,
+    category: "BUNDLES",
     imgs: [img1, img2, img3],
   },
   {
@@ -75,6 +83,7 @@ export const ProductsData = [
     rating: "4",
     price: 16,
     img: img1,
+    category: "FRUITS",
     imgs: [img1, img2, img3],
   },
   {
@@ -84,6 +93,7 @@ export const ProductsData = [
     rating: "4",
     price: 15,
     img: img1,
+    category: "HERBS",
     imgs: [img1, img2, img3],
   },
 ];

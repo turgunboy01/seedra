@@ -6,7 +6,7 @@ import { FaSquareCheck } from "react-icons/fa6";
 const ProductCard = ({ item }) => {
   const [clickCard, setClickCard] = useState(false);
   return (
-    <div className="rounded-lg border p-5 w-[255px] flex flex-col justify-between">
+    <div className="rounded-lg border p-5  h-[400px]  flex flex-col justify-between">
       <div className="">
         <img
           src={item.img}
@@ -16,11 +16,11 @@ const ProductCard = ({ item }) => {
         <span className="">
           <Rating name="read-only" value={item.rating} readOnly />
         </span>
-        <h2 className="text-[16px] text-[#1F2533] font-medium">{item.title}</h2>
+        <h2 className=" text-[16px] sm:text-[14px] lg:text-[16px] text-[#1F2533] font-medium">{item.title}</h2>
       </div>
       <div className="flex justify-between items-center">
         <span>
-          <h2 className="text-[24px] leading-[54px] font-semibold">
+          <h2 className="text-[28px] sm:text-[18px] lg:text-[24px] leading-[54px] font-semibold">
             ${item.price.toFixed(2)}
           </h2>
         </span>
