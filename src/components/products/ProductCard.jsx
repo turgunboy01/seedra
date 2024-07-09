@@ -2,9 +2,16 @@ import { Rating } from "@mui/material";
 import React, { useState } from "react";
 import { Card } from "../../assets/HomeSvg";
 import { FaSquareCheck } from "react-icons/fa6";
+import { addToCart } from "../../redux/CartSlice";
+import { useDispatch } from "react-redux";
 
 const ProductCard = ({ item }) => {
   const [clickCard, setClickCard] = useState(false);
+  const dispatch = useDispatch();
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
+  
   return (
     <div className="rounded-lg border p-5  h-[400px]  flex flex-col justify-between">
       <div className="">
@@ -16,7 +23,9 @@ const ProductCard = ({ item }) => {
         <span className="">
           <Rating name="read-only" value={item.rating} readOnly />
         </span>
-        <h2 className=" text-[16px] sm:text-[14px] lg:text-[16px] text-[#1F2533] font-medium">{item.title}</h2>
+        <h2 className=" text-[16px] sm:text-[14px] lg:text-[16px] text-[#1F2533] font-medium">
+          {item.title}
+        </h2>
       </div>
       <div className="flex justify-between items-center">
         <span>
@@ -28,7 +37,9 @@ const ProductCard = ({ item }) => {
           {clickCard ? (
             <FaSquareCheck size={40} className="text-[#359740]" />
           ) : (
-            <Card />
+            <button onClick={() => handleAddToCart(item)} className="">
+              <Card />
+            </button>
           )}
         </div>
       </div>

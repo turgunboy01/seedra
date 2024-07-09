@@ -5,6 +5,8 @@ import ProductsPage from "./pages/products/ProductsPage";
 import Contact from "./pages/contact/Contact";
 import CheckoutPage from "./pages/chekout/CheckoutPage";
 import CartPage from "./pages/cart/Cart";
+import Header from "./components/home/Header";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -32,7 +34,11 @@ const App = () => {
 
   return (
     <div>
-      <RouterProvider router={router} />
+      <Header />
+      <div className="pt-[80px]">
+        <RouterProvider router={router} />
+      </div>
+      <Footer />
     </div>
   );
 };
